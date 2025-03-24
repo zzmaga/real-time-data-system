@@ -1,10 +1,17 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	fmt.Println("Real-time data system started")
-	// Здесь позже подключим инициализацию конфигурации, базы, Kafka и запуск API
+	i := 0
+	s := 0
+	for i+1 < 10 {
+		i = i + 2
+		s = s + i
+		if s > 16 {
+			break
+		}
+	}
+	i = i + 1
+	fmt.Println(i)
 }
